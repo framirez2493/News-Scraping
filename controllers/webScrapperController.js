@@ -3,11 +3,9 @@ let axios = require('axios'); // HTTP Request
 let cheerio = require('cheerio'); // Web Scrapper
 let mongoose = require('mongoose'); // MongoDB ORM
 let db = require("../models"); // Require all models
-
-/////////////////////////////////////////////// /* Mongoose Configuration */ ////////////////////////////////////////////////////////
+/* Mongoose Configuration */ ////////////////////////////////////////////////////////
 mongoose.Promise = Promise; // Set mongoose to leverage Built in JavaScript ES6 Promises
-mongoose.connect("mongodb://heroku_9cs6jbxr:esE4jmuaxfr5fWb2x3n-PTqw7EOaNzgp@ds141613.mlab.com:41613/heroku_9cs6jbxr"
-, { //Connect to the Mongo DB
+mongoose.connect("mongodb://heroku_9cs6jbxr:esE4jmuaxfr5fWb2x3n-PTqw7EOaNzgp@ds141613.mlab.com:41613/heroku_9cs6jbxr", { //Connect to the Mongo DB
  useMongoClient: true
 });
 //mongoose.connect("mongodb://localhost/mongoHeadlines", { // Connect to the Mongo DB
@@ -22,11 +20,9 @@ mongooseConnection.on('error', console.error.bind(console, 'connection error:'))
 mongooseConnection.once('open', function() {
   console.log(`Sucessfully Connected to Mongo DB !`); // If Connection is successful, Console.log(Message)
 });
-
-/////////////////////////////////////////////// /* Exports */ ////////////////////////////////////////////////////////
+/* Exports */
 module.exports = (app) => { // Export Module Containing Routes. Called from Server.js
-
-  /////////////////////////////////////////////// /* Get Requests */ ////////////////////////////////////////////////////////
+ /* Get Requests */ 
   // Default Route
   app.get("/", (req, res) => res.render("index"));
 

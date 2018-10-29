@@ -1,6 +1,6 @@
 # All-the-News-That-s-Fit-to-Scrape
 `All the News That's Fit to Scrape` is an application that lets users scrape news articles from NPR.com. Users can then view and leave comments on saved articles. This app uses Cheerio to scrape news from NPR and stores them in MongoDB using Mongoose.
-Please Click on this [link](https://afternoon-mountain-55394.herokuapp.com) to Check the App out.
+Please Click on this [link](https://nameless-stream-54824.herokuapp.com/) to Check the App out.
 
 ## Technologies
 
@@ -35,9 +35,9 @@ Deployed on: `Heroku`
 
 ## Installation
 
-`All the News That's Fit to Scrape` can be downloaded by cloning this repository [`https://github.com/roverkim/Be-My-Friend-Finder.git`](https://github.com/roverkim/Be-My-Friend-Finder.git)
+`All the News That's Fit to Scrape` can be downloaded by cloning this repository [`https://github.com/framirez2493/scraping`]
 A Live Example can be Found Here
-[`https://afternoon-mountain-55394.herokuapp.com`](https://afternoon-mountain-55394.herokuapp.com)
+(https://nameless-stream-54824.herokuapp.com/)
 
 After installation, open node, navigate to the file and run `npm install`.
 
