@@ -11,7 +11,20 @@ var db = require("./models"); // Require all models
 
 let PORT = process.env.PORT || 8080; // Set Default Port for Express and Heroku
 let app = express(); // Initialize Express
+//let databaseUri = "mongodb://localhost/mongoHeadlines";
+/*if (process.env.MONGODB_URI){
+    mongoose.connect(process.env.MONGODB_URI);
+}else{
+    mongoose.connect(databaseUri)
+}
+//let db = mongoose.connection;
 
+db.on('error', function(err){
+    console.log('error',err);
+});
+db.once('open', function(){
+    console.log('good');
+});*/
  /* Configure middleware */
 // app.use(logger("dev")); // Use morgan logger for logging requests
 app.use(bodyParser.urlencoded({ extended: false })); // Use body-parser for handling form submissions
